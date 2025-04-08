@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+html {
+  font-size: 16px;
+}
+body {
+  background: #555;
+}
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9999;  
+  color: #FFF;
+}
+header h1 {
+  position: absolute;
+  left: 5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header h1 a {
+  display: block;
+  width: 5rem;
+  height: 10rem;
+  background: url(/img/HomeCC.svg) no-repeat;
+  background-position:  left top;
+  background-size: 100% auto;
+}
+#gnb .dep1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#gnb .dep1>li>a {
+  display: flex;
+  align-items: center;
+  margin: 0 2.5rem;
+  height: 5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+#gnb .dep1>li:hover>a {
+  color: orange;
+}
+#gnb .dep1>li:hover> .dep2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#gnb .dep2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#gnb .dep2 li {
+  position: relative;
+}
+#gnb .dep2>li:hover>a {
+  color: orange;
+}
+.header_util {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  top: 2.5rem;
+  right: 5rem;
+  gap: 1.5rem;
+  transform: translateY(-50%);
+}
+.blind {
+  display: none;
+}
